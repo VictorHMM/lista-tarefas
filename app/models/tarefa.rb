@@ -11,7 +11,9 @@
 #  updated_at :datetime         not null
 #
 class Tarefa < ApplicationRecord
+    before_save :default_values
     validates :titulo, presence: true
+    validates :prioridade, inlusion: {in: [1...5], message: "Prioridade deve ser um valor entre 1 e 5."}
 
     private
 

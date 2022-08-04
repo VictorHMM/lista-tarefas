@@ -1,0 +1,24 @@
+# == Schema Information
+#
+# Table name: tarefas
+#
+#  id         :bigint           not null, primary key
+#  concluido  :boolean
+#  descricao  :text
+#  prioridade :integer
+#  titulo     :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+one:
+  titulo: MyString
+  descricao: MyText
+  concluido: false
+  prioridade: 
+
+two:
+  titulo: MyString
+  descricao: MyText
+  concluido: false
+  prioridade: 
