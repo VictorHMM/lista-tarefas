@@ -24,8 +24,8 @@ class Tarefa < ApplicationRecord
     end
 
     def valida_prioridade
-        if self.prioridade.present?
-            errors.add(:prioridade, "Texto") unless [1..5].include?(self.prioridade)
+        if prioridade.present?
+            errors.add(:prioridade, "Prioridade deve ser um número entre 1 e 5") unless (1..5).include?(prioridade)
         end
     end
 end
